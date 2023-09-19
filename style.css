@@ -28,7 +28,10 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: relative;
 }
+
 
 .nav ul{
     list-style: none;
@@ -58,6 +61,9 @@ a:hover{
     padding-bottom: 3px;     
 }
 
+i.fi.fi-br-menu-burger {
+    display: none;
+}
 
 /*Fin header*/
 
@@ -79,15 +85,23 @@ a:hover{
 .banner-contenido h2{
    margin-top: 100px;
    text-align:left;
-   color: #eb8377;
-   font-size: 80px; 
+   color: white;
+   font-size: 60px; 
    margin-bottom: 20px;
 }
+
+.banner-contenido h2 span {
+    color: #eb8377;  
+    font-size: 90px;
+ }
 
 .banner-contenido p{
     text-align:left;
     color: white;
     font-size: 30px; 
+}
+.banner-contenido p span{
+   color: #eb8377;
 }
 
 .perfil{
@@ -97,6 +111,7 @@ a:hover{
     border-radius:30% 70% 35% 65% / 36% 48% 52% 64% ; /*lo tome de la pagina https://9elements.github.io/fancy-border-radius/#36.30.48.65--.*/
     width: 350px;
     height: 300px;
+    filter: contrast(140%);
 }
 
 
@@ -145,7 +160,7 @@ h3{
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     transition: .5s;
 }
@@ -158,7 +173,7 @@ h3{
     -webkit-box-shadow: 0px 2px 54px 25px rgba(235,131,119,0.19);
     -moz-box-shadow: 0px 2px 54px 25px rgba(235,131,119,0.19);
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-bottom: 30px;
     background: #D3CCE3;   /*lo tome de esta pagina https://cssgradient.io/gradient-backgrounds/*/
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
@@ -249,21 +264,29 @@ footer{
     flex-direction: column;
 }
 
-.redes{
+.redes {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row; 
     padding-bottom: 15px;
-    
+}
+
+.redes a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    margin: 5px;
+}
+
+.redes a:hover{
+    background-color: #eb8377;
+    padding-bottom: 3px;   
 }
 
 
-.redes img {
-    width: 35px;
-    margin: 10px;
-}
+
 /*Fin de footer*/
 
 
@@ -284,6 +307,9 @@ footer{
 @media all and (max-width:500px){
 
     /*Header*/
+    header{
+        background-color: #653d4d;
+    }
     .nav ul{
         flex-direction: column;
         justify-content: center;
@@ -337,6 +363,8 @@ footer{
         flex-wrap: wrap;
         align-content: space-around;
     }
+
 }
 /*Fin de media*/
+
 

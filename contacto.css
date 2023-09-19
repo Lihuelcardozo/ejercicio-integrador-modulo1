@@ -86,7 +86,6 @@ header{
 
 .contenedor a{
     font-size: 17px;
-    display: inline-block;
     text-decoration: none;
     width: 100%;
     margin-bottom: 15px;
@@ -97,9 +96,6 @@ header{
 .contenedor img{
     width: 25px;
     margin-right: 15px;
-    box-shadow: -3px 2px 38px -7px rgba(235,131,119,1);
-    -webkit-box-shadow: -3px 2px 38px -7px rgba(235,131,119,1);
-    -moz-box-shadow: -3px 2px 38px -7px rgba(235,131,119,1);
 }
 /*Fin de informacion*/
 
@@ -139,7 +135,7 @@ label{
 }
 
 .contenedor form textarea{
-    max-width: 430px;
+    max-width: 330px;
     min-height: 140px;
     max-height: 150px;
 }
@@ -184,18 +180,20 @@ label{
         color: white;
         font-size: 15px;
         font-family: 'Courier New', Courier, monospace;
-        text-align: center;
+        text-align: left ;
+        padding-left: 50px;
     }
 
     .contenedor a{
+        display: flex;
         font-size: 17px;
-        display: inline-block;
         text-decoration: none;
         width: 100%;
         margin-bottom: 15px;
         color: white;
         font-weight: 700;
         text-align: center;
+        justify-content: space-around;
 }
     /*Formulario*/
 
@@ -220,8 +218,8 @@ label{
 
 
     .contenedor form textarea{
-        max-width: 430px;
-        min-width: 430px;
+        max-width: 330px;
+        min-width: 330px;
         min-height: 140px;
      max-height: 150px;
     }

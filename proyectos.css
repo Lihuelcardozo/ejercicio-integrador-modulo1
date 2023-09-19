@@ -59,6 +59,10 @@ h3{
     text-align: center;
 }
 
+span{
+    color: #eb8377;  
+ }
+
 p{
     text-align:center;
     color: white;
@@ -81,7 +85,7 @@ p{
 .subconocimientos{
     justify-content: space-around;
     margin: 5px;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-bottom: 30px;
     background: #D3CCE3;
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
@@ -102,6 +106,7 @@ p{
 .subconocimientos img{
     width: 300px;
     margin-top: 10px;
+  
 }
 /*Fin de proyectos*/
 
