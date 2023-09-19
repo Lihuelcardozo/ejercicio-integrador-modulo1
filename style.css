@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,600&family=Nanum+Gothic&family=Roboto&family=Saira+Semi+Condensed:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+body{
+    background-color: #101819;
+}
+
+/*Header*/
+
+header{
+    background-color: rgb(0 0 0 / 37%);
+    width: 100%;
+}
+
+.nav{ 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li{
+    padding: 5px 25px;
+   
+}
+
+.nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration:none;
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+a:hover{
+    background-color: #eb8377;
+    border-bottom: 2px solid rgb(241, 244, 245);
+    padding-bottom: 3px;     
+}
+
+
+/*Fin header*/
+
+
+/*Section*/
+
+.banner-contenedor{
+    display: flex;
+    justify-content: center;
+    background-image: url(file:///C:/Users/cardo/Downloads/s2.webp);
+    width: 100%;
+    opacity: 90%;
+    background-position: center; /*centra la imagen del background*/
+    background-size: cover ; /*expande la imagen*/
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.banner-contenido h2{
+   margin-top: 100px;
+   text-align:left;
+   color: #eb8377;
+   font-size: 80px; 
+   margin-bottom: 20px;
+}
+
+.banner-contenido p{
+    text-align:left;
+    color: white;
+    font-size: 30px; 
+}
+
+.perfil{
+   
+    margin-left: 25px;
+    margin-top: 90px;
+    border-radius:30% 70% 35% 65% / 36% 48% 52% 64% ; /*lo tome de la pagina https://9elements.github.io/fancy-border-radius/#36.30.48.65--.*/
+    width: 350px;
+    height: 300px;
+}
+
+
+h3{
+    color:white;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-decoration-color: #eb8377;
+}
+
+.container p{
+    color: white;
+    font-size: medium;
+}
+
+.conocimientos-contenedor{  
+    margin: 15px;
+    text-align: center;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.conocimientos{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*Fin de section*/
+
+
+/*Tarjetas*/
+
+.tarjeta {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.tarjeta .cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tarjeta .frente {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    justify-content: space-around;
+    box-shadow: 0px 2px 54px 25px rgba(235,131,119,0.19);
+    -webkit-box-shadow: 0px 2px 54px 25px rgba(235,131,119,0.19);
+    -moz-box-shadow: 0px 2px 54px 25px rgba(235,131,119,0.19);
+    margin: 5px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background: #D3CCE3;   /*lo tome de esta pagina https://cssgradient.io/gradient-backgrounds/*/
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+}
+
+.tarjeta .frente h4{
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+.tarjeta .frente img {
+    position: absolute;
+    width: 100px;
+    object-fit: cover;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.tarjeta .dorso {
+    transform: perspective(600px) rotateY(180deg);
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+    background-color: #eb8377;
+}
+
+.tarjeta .dorso h3 {
+    font-size: 30px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    text-decoration: #101819;
+    text-decoration-line: underline;
+}
+
+.tarjeta .dorso p {
+    letter-spacing: 1px;
+    margin-bottom: 150px;
+} 
+
+.tarjeta:hover .frente {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjeta:hover .dorso {
+    transform: perspective(600px) rotateY(360deg);
+}
+/*Fin de tarjetas*/
+
+/*Footer*/
+
+footer{
+    background-color: #653d4d;  
+}
+
+.footer-nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    list-style: none;  
+    justify-content:center;
+    padding-top: 15px;
+}
+
+.footer-nav a{
+    color: black;
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+.footer-nav a:hover{ 
+    background-color: #eb8377;
+    padding-bottom: 3px;         
+}
+.autores{
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 15px;
+    
+}
+
+
+.redes img {
+    width: 35px;
+    margin: 10px;
+}
+/*Fin de footer*/
+
+
+/*Media*/
+
+@media all and (max-width:800px){
+    .nav ul{
+    justify-content: space-around;
+    padding-bottom: 80px;
+    }
+
+    .banner-contenedor{
+        justify-content: space-around;
+    }
+}
+
+
+@media all and (max-width:500px){
+
+    /*Header*/
+    .nav ul{
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*Sobre mi*/
+    .banner-contenedor{
+        flex-direction: column
+    }
+
+    .banner-contenido h2{
+        font-size: 40px ; 
+        padding-left: 10px;
+        padding-top: 15;
+        text-align: center;
+    
+    }
+    .banner-contenido p{
+        font-size: 20px;
+        padding-left: 10px;
+        text-align: center;
+    }
+    .perfil{
+        border-radius: 30% 70% 35% 65% / 36% 48% 52% 64%;
+        width: 250px;
+        height: 150px;
+        margin-left: 125px;
+        margin-bottom: 120px;
+    }
+    /*Conocimientos*/
+    .container h3{
+        font-size: 25px;
+        padding-top: 60px;
+    }
+    .container p{
+        font-size: 15px;
+    }
+
+    /*Tarjeta*/
+    .tarjeta{
+        position: relative;
+        width: 200px;
+        height: 300px;
+        margin: 20px;
+        cursor: pointer;
+    
+    }
+    .conocimientos{
+        display: flex;
+        margin-top: 15px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
+/*Fin de media*/
+

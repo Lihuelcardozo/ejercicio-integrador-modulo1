@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\contacto.css">
+</head>
+<body>
+<!--Header-->
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a class="header"  href="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\index.html">Volver</a></li>
+            </ul>
+        </div>
+    </header>
+<!--Informacion-->
+    <div class="contenedor">
+        <div class="informacion">
+            <h2>Contactame</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi eius doloribus, tempora, debitis nulla facere quia repellendus in sunt doloremque laborum! Est modi, iure ad sit minus placeat accusamus sed.</p>
+            <a href="#"> <img src="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\img\llamada-telefonica.png" alt="telefono">011-12345678</a>
+            <a href="#"><img src="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\img\email.png" alt="mail">Cardozozlihuel@gmail.com</a>
+            <a href="#"><img src="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\img\pasador-de-ubicacion.png" alt="ubicacion">Tigre, Buenos Aires</a>
+            <h3>Seguime</h3>
+            <a href="#"><img src="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\img\linkedin.png" alt="linkedin"><img src="C:\Users\cardo\OneDrive\Documentos\Ada\modulo 1\ejercicio integrador\img\instagram.png" alt="instagram"></a>
+        </div>
+<!--Formulario-->
+        <form action="register" method="POST" class="formulario-contenedor">
+            <div class="fila">
+                <div class="col">
+                    <label for="Nombre">Nombre*</label>
+                    <input 
+                        class="contenido"
+                        type="text" 
+                        name="nombre" 
+                        id="nombre"
+                        placeholder="Ingresa tu nombre"
+                        required
+                    >
+                </div>
+                <div class="col">
+                    <label for="Apellido">Apellido*</label>
+                    <input 
+                        class="contenido"
+                        type="text"
+                        name="apellido"
+                        id="apellido"
+                        placeholder="Ingresa tu apellido"
+                        required
+                    >
+                </div>
+            <div class="fila">
+                <div class="col">
+                    <label for="telefono">Telefono*</label>
+                    <input 
+                        class="contenido"
+                        type="number" 
+                        name="telefono" 
+                        id="telefono"
+                        placeholder="Ingresa tu telefono"
+                        required
+                    >
+                </div>
+                <div class="col">
+                    <label for="dni">DNI*</label>
+                    <input 
+                        class="contenido"
+                        type="number"
+                        name="dni"
+                        id="dni"
+                        placeholder="Ingresa tu DNI"
+                        required
+                    >
+                </div>  
+                <div class="fila">
+                    <div class="col">
+                        <label for="email">Email*</label>
+                        <input 
+                            class="contenido"
+                            type="email" 
+                            name="email" 
+                            id="email"
+                            placeholder="Ingresa tu email"
+                            required
+                        >
+                    </div>
+                    <div class="col">
+                        <label for="email-conf">Confirmar email*</label>
+                        <input 
+                            class="contenido"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Confirma tu DNI"
+                            required
+                        >
+                    </div>     
+                <div class="motivo">
+                    <label for="motivo">Motivo de consulta</label>
+                    <textarea 
+                        class="contenido"   
+                        name="motivo"   
+                        id="motivo" 
+                        cols="30" 
+                        rows="10"
+                        placeholder="Ingresa tu consulta"
+                        required>    
+                    </textarea>
+                </div>
+<!--Boton de formulario-->
+		    <input 
+                type="submit" 
+                name="enviar" 
+                value="Enviar mensaje" 
+                class="btn-enviar">
+        </form>
+    </div>
+</body>
+</html>
