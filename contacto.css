@@ -11,7 +11,7 @@
 }
 
 body{
-    background-image: url(file:///C:/Users/cardo/Downloads/s2.webp);
+    background-image: url(img/fondo.jpg);
     background-position: center; /*centra la imagen del background*/
     background-size: cover ; /*expande la imagen*/
     background-attachment: fixed;

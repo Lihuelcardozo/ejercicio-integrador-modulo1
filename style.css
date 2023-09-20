@@ -73,7 +73,7 @@ i.fi.fi-br-menu-burger {
 .banner-contenedor{
     display: flex;
     justify-content: center;
-    background-image: url(file:///C:/Users/cardo/Downloads/s2.webp);
+    background-image: url(img/fondo.jpg);
     width: 100%;
     opacity: 90%;
     background-position: center; /*centra la imagen del background*/
