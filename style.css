@@ -61,10 +61,6 @@ a:hover{
     padding-bottom: 3px;     
 }
 
-i.fi.fi-br-menu-burger {
-    display: none;
-}
-
 /*Fin header*/
 
 
@@ -316,7 +312,9 @@ footer{
     }
     /*Sobre mi*/
     .banner-contenedor{
-        flex-direction: column
+        flex-direction: column;
+        padding-top: 15px;
+        
     }
 
     .banner-contenido h2{
