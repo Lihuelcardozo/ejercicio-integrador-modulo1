@@ -15,35 +15,19 @@ body{
 }
 
 /*Header*/
-
 header{
     background-color: rgb(0 0 0 / 37%);
     width: 100%;
+    padding: 25px;
 }
 
-.nav{ 
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
+.nav-logo{
+    color: #fff;
+    padding-right: 100px;
+    margin-bottom: 15px;
 }
 
-
-.nav ul{
-    list-style: none;
-    display: flex;
-}
-
-.nav ul li{
-    padding: 5px 25px;
-   
-}
-
-.nav ul li a{
+.nav a{
     color: white;
     font-size: 20px;
     text-decoration:none;
@@ -53,29 +37,63 @@ header{
     text-decoration: none;
     transition: all 0.3s ease;
     border-bottom: 2px solid transparent;
+    padding: 5px 25px;
 }
 
 a:hover{
     background-color: #eb8377;
-    border-bottom: 2px solid rgb(241, 244, 245);
+    border-bottom: 2px solid #eb8377;
     padding-bottom: 3px;     
 }
 
+.nav{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-contenedor{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.nav-menu{
+    display: grid;
+    grid-auto-flow: column ;
+    gap: 3em;
+}
+
+.nav-item{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-label, .nav-input{
+    display: none;
+}
 /*Fin header*/
 
-
 /*Section*/
-
 .banner-contenedor{
     display: flex;
     justify-content: center;
     background-image: url(img/fondo.jpg);
     width: 100%;
-    opacity: 90%;
     background-position: center; /*centra la imagen del background*/
     background-size: cover ; /*expande la imagen*/
     background-attachment: fixed;
-    height: 500px;
+    padding-bottom: 30px;
 }
 
 .banner-contenido h2{
@@ -89,7 +107,7 @@ a:hover{
 .banner-contenido h2 span {
     color: #eb8377;  
     font-size: 90px;
- }
+}
 
 .banner-contenido p{
     text-align:left;
@@ -101,7 +119,6 @@ a:hover{
 }
 
 .perfil{
-   
     margin-left: 25px;
     margin-top: 90px;
     border-radius:30% 70% 35% 65% / 36% 48% 52% 64% ; /*lo tome de la pagina https://9elements.github.io/fancy-border-radius/#36.30.48.65--.*/
@@ -109,7 +126,6 @@ a:hover{
     height: 300px;
     filter: contrast(140%);
 }
-
 
 h3{
     color:white;
@@ -137,12 +153,10 @@ h3{
     justify-content: center;
     gap: 20px;
 }
-
 /*Fin de section*/
 
 
 /*Tarjetas*/
-
 .tarjeta {
     position: relative;
     width: 200px;
@@ -281,13 +295,10 @@ footer{
     padding-bottom: 3px;   
 }
 
-
-
 /*Fin de footer*/
 
 
 /*Media*/
-
 @media all and (max-width:800px){
     .nav ul{
     justify-content: space-around;
@@ -304,17 +315,49 @@ footer{
 
     /*Header*/
     header{
-        background-color: #653d4d;
+        background: #653d4d;
     }
-    .nav ul{
+
+    .nav-label{
+        display: block;
+        cursor: pointer;
+        margin: 30px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #653d4d ;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;
+        visibility: visible;
     }
+
+    .nav-contenedor{
+        
+        display: flex;
+        align-content: stretch;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+
+    .nav-input:checked + .nav-menu{
+        clip-path: circle(100% at center);
+    }  
+
     /*Sobre mi*/
     .banner-contenedor{
         flex-direction: column;
-        padding-top: 50px;
-        
+        padding-top: 50px;  
     }
 
     .banner-contenido h2{
@@ -322,13 +365,14 @@ footer{
         padding-left: 10px;
         padding-top: 15;
         text-align: center;
-    
     }
+
     .banner-contenido p{
         font-size: 20px;
         padding-left: 10px;
         text-align: center;
     }
+
     .perfil{
         border-radius: 30% 70% 35% 65% / 36% 48% 52% 64%;
         width: 250px;
@@ -336,6 +380,7 @@ footer{
         margin-left: 125px;
         margin-bottom: 120px;
     }
+    
     /*Conocimientos*/
     .container h3{
         font-size: 25px;
